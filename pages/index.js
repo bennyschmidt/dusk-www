@@ -72,11 +72,11 @@ export default function Home ({
         </div>
         <div className={styles.info}>
           <h3>Browse the decentralized web.</h3>
-          <p>Find and do things online without the need of &ldquo;Big Tech&rdquo; &amp; social media platforms who are known to censor, prevent access, show ads, and charge unwanted fees.</p>
+          <p>Find and do things online without the need of centralized platforms that are known to censor, prevent access, show ads, and charge unwanted fees.</p>
         </div>
         <div className={styles.info}>
           <h3>Discover the web&apos;s true potential.</h3>
-          <p>Enjoy unbridled, worldwide access to the free &amp; open web the way it was intended to be. Peer-to-peer &ldquo;de-platforms&rdquo; the Internet, similar to the way browsers broke down the &ldquo;walled gardens&rdquo; of the early web.</p>
+          <p>Enjoy unbridled, worldwide access to the free &amp; open web the way it was intended to be. Peer-to-peer restores content to the Internet by &ldquo;de-platforming&rdquo; it, similar to the way browsers broke down the &ldquo;walled gardens&rdquo; of early ISPs.</p>
         </div>
         <div className={styles.product}>
           <Image
@@ -96,8 +96,8 @@ export default function Home ({
       </section>
       <div className={styles.detail}>
         <h3>Twitter for tweets... Yelp for reviews... YouTube for videos...</h3>
-        <p>Monolithic platforms were worth using when they used to add value to the user, but now &mdash; even for basic access to content &mdash; there are auth walls, pay walls, excessive fees, invasive ads, and even outright censorship of up-and-comers.</p>
-        <p>It&apos;s gotten to the point that companies actively prevent good content from being seen, and even eliminate new creators from becoming successful when they challenge the viewpoints of their investors.</p>
+        <p>&ldquo;Big Tech&rdquo; apps &amp; social media platforms were worth using when they used to add value to the user, but now &mdash; even for basic access to content &mdash; there are auth walls, pay walls, excessive fees, invasive ads, and even outright censorship of up-and-comers through practices like shadowbanning and biased algorithms.</p>
+        <p>It&apos;s gotten to the point that major tech companies actively prevent good content from being seen &amp; heard; they even eliminate some new creators from becoming visible on their platforms.</p>
         <p>Dusk Browser is a way out of this mess by open-sourcing the entire model.</p>
       </div>
       <section className={[styles.container, styles.promo].join(' ')}>
