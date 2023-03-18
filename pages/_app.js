@@ -37,7 +37,7 @@ export default function App ({ Component, pageProps }) {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Dusk Browser</title>
         <link rel="manifest" href="/manifest.json" />
@@ -48,6 +48,6 @@ export default function App ({ Component, pageProps }) {
         {message}
       </aside>
       <Component {...props} />
-    </div>
+    </>
   );
 }

@@ -1,5 +1,13 @@
+button.link {
+  appearance: none;
+  display: inline;
+  background: transparent;
+  color: white;
+  text-decoration: underline;
+}
+
 .container {
-  padding: 0 2rem;
+  padding: 2rem 10vw;
 }
 
 .main {
@@ -9,9 +17,7 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -22,59 +28,107 @@
 }
 
 .hero {
-
+  background: url('/img/sunset.jpg') center top / cover no-repeat;
+  background-color: #110d1325;
+  background-blend-mode: multiply;
+  min-height: 100vh;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.title,
-.description {
+.hero h2 {
   text-align: center;
 }
 
-.description {
-  margin: 2rem 0;
-  font-size: 1.5rem;
+.branding {
+  opacity: .3;
+  margin: 2rem;
 }
 
-.grid {
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta h2 {
+  margin-top: 10vw;
+  font-size: min(max(2em, 5vw), 5em);
+}
+
+.appicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 0 3rem;
+}
+
+.appicon img {
+  object-fit: contain;
+}
+
+.main {
   display: grid;
-  grid-template-columns: .5fr 1fr .5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.product {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 1rem;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.info {
+  color: white;
+  margin: 2.5rem 0 0;
+  padding: 2rem;
+  font-size: min(max(.7em, 1.4vw), 1.4em);
+  line-height: min(max(1.4em, 2.8vw), 2.8em);
+  max-width: 75%;
 }
 
-.card p {
-  margin: 2rem 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.info:nth-of-type(3) {
+  padding-left: 5rem;
+}
+
+.creators {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/img/creative.jpg') center top / cover no-repeat;
+  background-color: #110d1325;
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.creators h4 {
+  font: normal 800 min(max(3em, 7vw), 7em)/1em 'WC Mano Negra', serif;
+  text-shadow: 0 .3rem 0 black;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.creators p {
+  font: normal 400 min(max(1em, 2.4vw), 2em)/.75em 'Viga', sans-serif;
+  text-shadow: 0 0 2rem black;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/img/sunset2.jpg') center bottom / cover no-repeat;
+  background-color: #110d1325;
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  margin: 2rem;
+  border-radius: 2rem;
 }
 
 .banner,
@@ -100,75 +154,28 @@
   opacity: 1;
 }
 
-.search {
-  background: #eaeaea;
-  border-radius: 100vw;
-  border: none;
-  padding: 1rem;
-  outline: none;
-  width: 75%;
-  font-size: .6em;
-}
-
-.search:focus {
-  background: transparent;
-  border: 1px solid #0070f3;
-}
-
-.sidebar {
-  margin: 7rem 0 0 7rem;
-  font-size: 1.4em;
-  line-height: 2em;
-}
-
-.tab,
-.tab-active {
-  margin: .5rem 0;
-  padding-left: 1rem;
-  font-size: .9em;
-}
-
-.tab-active {
-  border-left: 2px solid #0070f3;
-  pointer-events: none;
-}
-
 @media (max-width: 974px) {
-  .grid {
-    width: 100%;
+  .main {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .sidebar {
-    margin: 2rem;
-    font-size: 1.1em;
-    display: block;
+  .info {
     text-align: center;
   }
 
-  .tab,
-  .tab-active {
-    padding-left: 0;
+  .info:nth-of-type(3) {
+    padding-left: 2rem;
   }
 
-  .tab-active {
-    border-left: none;
-    font-style: italic;
+  .creators p {
+    line-height: 2em;
+    margin: 0;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
 
-  .code {
-    background: #111;
-  }
-
-  .search {
-    background: #222;
-  }
 }

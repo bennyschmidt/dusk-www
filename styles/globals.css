@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('/font/OpenSans-Variable.ttf');
+}
+
+@font-face {
+  font-family: 'Viga';
+  src:  url('/font/Viga-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'WC Mano Negra';
+  src:  url('/font/WCManoNegraBta.ttf');
+}
 
 * {
   box-sizing: border-box;
@@ -6,9 +19,10 @@
 
 html,
 body {
+  background: #110d13;
   padding: 0;
   margin: 0;
-  font: normal 400 15px/21px "Libre Franklin", sans-serif;
+  font: normal 400 15px/21px 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,39 +33,29 @@ a {
 }
 
 a:hover {
-  color: #0070f3;
+  color: white;
   text-decoration: underline;
 }
 
-button {
-  background: #0070f3;
-  border-radius: 100vw;
-  border: none;
+h2 {
   color: white;
-  width: 100%;
-  padding: 1rem;
+  text-shadow: 0 0 .7rem #e950fa;
+  font: normal 400 4em 'Viga', sans-serif;
+}
+
+button {
+  background: white;
+  border-radius: 1.25rem;
+  border: none;
+  color: black;
+  min-width: 5rem;
+  max-width: 20rem;
+  padding: 1rem 3rem;
   font-weight: 800;
   cursor: pointer;
 }
 
 input[disabled],
 button[disabled] {
-  pointer-events: none;
-  opacity: .5;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: white;
-    background: black;
-  }
-
-  button {
-    background: white;
-    color: black;
-  }
+  cursor: not-allowed;
 }
