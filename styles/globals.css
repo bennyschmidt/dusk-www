@@ -39,7 +39,6 @@ a:hover {
 
 h2 {
   color: white;
-  text-shadow: 0 0 .7rem #e950fa;
   font: normal 400 4em 'Viga', sans-serif;
 }
 
@@ -53,6 +52,10 @@ button {
   padding: 1rem 3rem;
   font-weight: 800;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: .6;
 }
 
 input[disabled],
