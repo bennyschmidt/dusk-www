@@ -26,7 +26,7 @@ export default function Home ({
     for (const userAgent of Object.keys(OPERATING_SYSTEMS)) {
       const OS = OPERATING_SYSTEMS[userAgent];
 
-      if (window.navigator.userAgent.includes(OS)) {
+      if (window.navigator.userAgent.includes(userAgent)) {
         setOSName(OS);
       }
     }
