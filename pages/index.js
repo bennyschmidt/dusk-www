@@ -95,10 +95,10 @@ export default function Home ({
         </div>
       </section>
       <div className={styles.detail}>
-        <h3>Twitter for tweets... Yelp for reviews... YouTube for videos...</h3>
-        <p>&ldquo;Big Tech&rdquo; apps &amp; social media platforms were worth using when they used to add value to the user, but now &mdash; even for basic access to content &mdash; there are auth walls, pay walls, excessive fees, invasive ads, and even outright censorship of up-and-comers through practices like shadowbanning and biased algorithms.</p>
-        <p>It&apos;s gotten to the point that major tech companies actively prevent good content from being seen &amp; heard; they even eliminate some new creators from becoming visible on their platforms.</p>
-        <p>Dusk Browser is a way out of this mess by open-sourcing the entire model.</p>
+        <h3>Platform emancipation</h3>
+        <p>Yelp for reviews... Twitter for thoughts... YouTube for videos... Ticketmaster for tickets...</p>
+        <p>&ldquo;Big Tech&rdquo; apps &amp; social media platforms pioneered something great at first, but as they grew into corporate monopolies, things got weird. Now &mdash; even for basic access &mdash; there are auth &amp; pay walls, excessive fees, invasive ads, and even outright censorship through practices like shadowbanning and the use of biased algorithms.</p>
+        <p>Dusk Browser offers an alternative, by open-sourcing the entire model.</p>
       </div>
       <section className={[styles.container, styles.promo].join(' ')}>
         <div className={styles.product}>
