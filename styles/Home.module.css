@@ -36,7 +36,7 @@ button.link {
 
 .hero h2,
 .hero p {
-  text-shadow: 0 0 .7rem #e950fa;
+  text-shadow: 0 0 1rem #f250fa, 0 0 15rem #f250fa90;
   text-align: center;
 }
 
