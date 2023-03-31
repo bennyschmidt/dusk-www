@@ -115,7 +115,6 @@ button.link {
   padding: 2.5rem;
   font-size: min(max(.9em, 1.2vw), 1.2em);
   line-height: min(max(1.3em, 2.6vw), 2.6em);
-  max-width: 75%;
 }
 
 .info:nth-of-type(3) {
