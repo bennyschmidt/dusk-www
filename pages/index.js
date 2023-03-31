@@ -65,9 +65,10 @@ export default function Home ({
         <div className={styles.product}>
           <Image
             alt="Dusk Browser"
-            src="/img/product.png"
-            width={500}
-            height={446}
+            src="/img/dusk-browser-product-2.png"
+            width={640}
+            height={360}
+            unoptimized
           />
         </div>
         <div className={styles.info}>
@@ -75,18 +76,50 @@ export default function Home ({
           <p>Find and do things online without the need of centralized platforms that are known to censor, prevent access, show ads, and charge unwanted fees.</p>
         </div>
         <div className={styles.info}>
-          <h3>Discover the web&apos;s true potential.</h3>
-          <p>Enjoy unbridled, worldwide access to the free &amp; open web the way it was intended to be. Peer-to-peer restores content to the Internet by &ldquo;de-platforming&rdquo; it, similar to the way browsers broke down the &ldquo;walled gardens&rdquo; of early ISPs.</p>
+          <h3>Discover the Internet&apos;s true potential.</h3>
+          <p>Enjoy unbridled, worldwide access to the free &amp; open web the way it was intended to be. Peer-to-peer networks restore content to the Internet by &ldquo;de-platforming&rdquo; it, similar to the way browsers broke down the &ldquo;walled gardens&rdquo; of early ISPs.</p>
         </div>
         <div className={styles.product}>
           <Image
             alt="Dusk Browser"
-            src="/img/product2.png"
-            width={500}
-            height={446}
+            src="/img/dusk-browser-product.png"
+            width={640}
+            height={360}
+            unoptimized
           />
         </div>
       </main>
+      <section className={styles.container}>
+        <Image
+          alt="World Wide Web (Dusk Browser)"
+          src="/img/dusk-http.png"
+          width={960}
+          height={540}
+          style={{
+            width: "100%",
+            height: "inherit",
+            objectFit: "contain",
+            objectPosition: "center center",
+            borderRadius: "1rem"
+          }}
+          unoptimized
+        />
+        <h2 style={{ textAlign: "center", padding: 0 }}>The best of both worlds.</h2>
+        <Image
+          alt="Dereva (Dusk Browser)"
+          src="/img/dusk-drv.png"
+          width={960}
+          height={540}
+          style={{
+            width: "100%",
+            height: "inherit",
+            objectFit: "contain",
+            objectPosition: "center center",
+            borderRadius: "1rem"
+          }}
+          unoptimized
+        />
+      </section>
       <section className={[styles.container, styles.creators].join(' ')}>
         <h4>Create the Internet.</h4>
         <div>
@@ -94,12 +127,6 @@ export default function Home ({
           <p>Peer-to-peer tech enables people to connect directly.</p>
         </div>
       </section>
-      <div className={styles.detail}>
-        <h3>Platform emancipation</h3>
-        <p>Yelp for reviews... Twitter for thoughts... YouTube for videos... Ticketmaster for tickets...</p>
-        <p>&ldquo;Big Tech&rdquo; apps &amp; social media platforms pioneered something great at first, but as they grew into corporate monopolies, things got weird. Now &mdash; even for basic access &mdash; there are auth &amp; pay walls, excessive fees, invasive ads, and even outright censorship through practices like shadowbanning and the use of biased algorithms.</p>
-        <p>Dusk Browser offers an alternative, by open-sourcing the entire model.</p>
-      </div>
       <section className={[styles.container, styles.promo].join(' ')}>
         <div className={styles.product}>
           <Image
