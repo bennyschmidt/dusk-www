@@ -89,37 +89,6 @@ export default function Home ({
           />
         </div>
       </main>
-      <section className={styles.container}>
-        <Image
-          alt="World Wide Web (Dusk Browser)"
-          src="/img/dusk-http.png"
-          width={960}
-          height={540}
-          style={{
-            width: "100%",
-            height: "inherit",
-            objectFit: "contain",
-            objectPosition: "center center",
-            borderRadius: "1rem"
-          }}
-          unoptimized
-        />
-        <h2 style={{ textAlign: "center", padding: 0 }}>The best of both worlds.</h2>
-        <Image
-          alt="Dereva (Dusk Browser)"
-          src="/img/dusk-drv.png"
-          width={960}
-          height={540}
-          style={{
-            width: "100%",
-            height: "inherit",
-            objectFit: "contain",
-            objectPosition: "center center",
-            borderRadius: "1rem"
-          }}
-          unoptimized
-        />
-      </section>
       <section className={[styles.container, styles.creators].join(' ')}>
         <h4>Create the Internet.</h4>
         <div>
