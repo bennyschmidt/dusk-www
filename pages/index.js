@@ -53,12 +53,12 @@ export default function Home ({
               height={128}
             />
           </div>
-          <button disabled title="Summer 2023">
+          {/*<button disabled title="Summer 2023">
             Download{OSName ? ` for ${OSName}` : ''}
           </button>
           {OSName && <button disabled title="Summer 2023" className={styles.link}>
             Other versions
-          </button>}
+          </button>}*/}
         </section>
       </header>
       <main className={styles.main}>
@@ -105,9 +105,9 @@ export default function Home ({
             height={510}
           />
         </div>
-        <button disabled title="Summer 2023">
+        {/*<button disabled title="Summer 2023">
           Download Dusk
-        </button>
+        </button>*/}
       </section>
       <footer className={[styles.container, styles.footer].join(' ')}>
         <Image
